@@ -1,0 +1,8 @@
+Just copy it to your autoexec . If you don't have autoexec file go to this video : https://www.youtube.com/watch?v=qajrfJOlZDs
+
+alias bhopjumping "+jump;wait 3;-jump;wait 3;bhoploop"
+alias bhopalias "alias bhoploop bhopjumping"
+alias bhopstop "alias bhoploop"
+alias +bunnyhop "bhopalias;bhopjumping"
+alias -bunnyhop "bhopstop;-jump"
+bind SPACE +bunnyhop
