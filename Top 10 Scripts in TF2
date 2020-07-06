@@ -74,7 +74,7 @@ bind DOWNARROW loadout2
 bind RIGHTARROW loadout3
 bind UPARROW loadout4
 
-2 - crosshair switching script (I use more complex than this, can be class specific or loadout specific) :
+2 - crosshair switching script example (I use more complex than this, can be class specific or loadout specific) :
 
 alias crosshairone "cl_crosshair_file crosshair6;cl_crosshair_scale 65;cl_crosshair_red 0;cl_crosshair_green 255;cl_crosshair_blue 0"
 alias crosshairtwo "cl_crosshair_file crosshair3;cl_crosshair_scale 65;cl_crosshair_red 255;cl_crosshair_green 0;cl_crosshair_blue 0"
