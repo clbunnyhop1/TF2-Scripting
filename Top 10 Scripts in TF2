@@ -1,0 +1,96 @@
+IMPORTANT :
+
+* make sure , that you have your autoexec and class specific files (if not go to this video : https://www.youtube.com/watch?v=qajrfJOlZDs )
+* copy it to your autoexec (if not class specific)
+* change hotkeys to your preffered ones
+
+10 - more details in scoreboard :
+
+alias +showinfo "+showscores;net_graph 1;net_graphtext 1;net_graphproportionalfont 0"
+alias -showinfo "-showscores;net_graph 0;net_graphtext 0;net_graphproportionalfont 0"
+
+bind TAB +showinfo
+
+9 - medic info script (put into your medic.cfg file , can be done for engineer with dispenser) :
+
+alias textuberpopped "say_team Über popped!!!"
+alias +textandpop "textuberpopped;+attack2;"
+alias -textandpop "-attack2;"
+
+bind MOUSE2 +textandpop
+
+8 - rocket jumping script (put into your soldier.cfg file):
+
+alias +rocketjump "+jump;+duck;+attack"
+alias -rocketjump "-jump;-duck;-attack"
+
+bind MOUSE2 +rocketjump
+
+7 - more heavy sensitivity while spun up (put into your heavyweapons.cfg file):
+
+alias +moresensitivity "+attack2;sensitivity 8"
+alias -moresensitivity "-attack2;sensitivity 4"
+
+bind MOUSE2 +moresensitivity
+
+6 - engineer quick building scripts (put into your engineer.cfg file):
+
+bind MOUSE3 "destroy 2 0; build 2 0"
+bind MOUSE4 "destroy 0 0; build 0 0"
+bind 4 "destroy 1 0; build 1 0"
+bind 5 "destroy 1 1; build 1 1"
+
+5 - change class script : 
+
+bind KP_END "join_class scout"
+bind KP_DOWNARROW "join_class soldier"
+bind KP_PGDN "join_class pyro"
+bind KP_LEFTARROW "join_class demoman"
+bind KP_5 "join_class heavyweapons"
+bind KP_RIGHTARROW "join_class engineer"
+bind KP_HOME "join_class medic"
+bind KP_UPARROW "join_class sniper"
+bind KP_PGUP "join_class spy"
+
+4 - throwing scrtipts (more effective with autohotkey) :
+
+alias waittesting "alias test positive; wait;test"
+alias wait "alias test negative"
+alias positive "clear;echo Waiting enabled ;waitenabled"
+alias negative "clear;echo Waiting DISABLED ;waitdisabled;"
+alias waitenabled "waitpositiveresult124;"
+alias waitdisabled "waitnegativeresult124;"
+
+alias waitpositiveresult124 "bind 2 throw"
+alias waitnegativeresult124 "bind 2 slot2"
+alias throw "slot2;wait 75;+attack;wait 5;slot1;-attack"
+
+waittesting
+
+3 - loadout bind :
+
+bind LEFTARROW loadout1
+bind DOWNARROW loadout2
+bind RIGHTARROW loadout3
+bind UPARROW loadout4
+
+2 - crosshair switching script (I use more complex than this, can be class specific or loadout specific) :
+
+alias crosshairone "cl_crosshair_file crosshair6;cl_crosshair_scale 65;cl_crosshair_red 0;cl_crosshair_green 255;cl_crosshair_blue 0"
+alias crosshairtwo "cl_crosshair_file crosshair3;cl_crosshair_scale 65;cl_crosshair_red 255;cl_crosshair_green 0;cl_crosshair_blue 0"
+alias crosshairthree "cl_crosshair_file crosshair5;cl_crosshair_scale 65;cl_crosshair_red 20;cl_crosshair_green 20;cl_crosshair_blue 20"
+
+alias crosshairswitch1 "slot1;crosshairone"
+alias crosshairswitch2 "slot2;crosshairtwo"
+alias crosshairswitch3 "slot3;crosshairthree"
+
+bind 1 crosshairswitch1
+bind 2 crosshairswitch2
+bind 3 crosshairswitch3
+
+1 - random disguise script updated version : https://www.youtube.com/watch?v=XSaDqvY-Xd4&t=8s
+
+BONUS - bindtoggles :
+
+bindtoggle x "cl_showfps" 0 1 
+bindtoggle \ "sv_cheats" 0 1
