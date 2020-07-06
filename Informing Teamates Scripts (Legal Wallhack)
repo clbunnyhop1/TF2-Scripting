@@ -1,0 +1,10 @@
+If you are legal player , binding these can be advantageous . It can provide team with some informations .
+
+bind [key] "say_team Über ready!!!"
+bind [key] "say_team They have Übercharge!!!"
+bind [key] "say_team Their medic is 100% ready!!!"
+bind [key] "say_team You can use my dispenser!!!"
+bind [key] "say_team They have a sentry!!!"
+bind [key] "say_team Sentry down , you can push!!!"
+bind [key] "say_team Spy is sapping!!!"
+bind [key] "say Kick the spammer!!!"
