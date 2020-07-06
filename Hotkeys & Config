@@ -1,0 +1,67 @@
+Here is how proper config should look like , (put it in autoexec if you don't have autoexec go here :https://www.youtube.com/watch?v=qajrfJOlZDs ) 
+
+bind MOUSE1 +attack
+bind MOUSE2 +attack2
+bind MOUSE3 +attack3
+bind SPACE +jump
+bind a +moveleft
+bind d +moveright
+bind s +back
+bind w +forward
+bind LEFTARROW loadout1
+bind DOWNARROW loadout2
+bind RIGHTARROW loadout3
+bind UPARROW loadout4
+bind e +helpme
+bind f +inspect
+bind g +taunt
+bind r +reload
+bind t say_team
+bind y say
+bind v +voicerecord
+bind k kill
+bind i open_charinfo_direct
+bind SHIFT +duck
+bind 1 slot1
+bind 2 slot2
+bind 3 slot3
+bind 4 slot4
+bind 5 slot5
+unbind 6
+unbind 7
+unbind 8
+unbind 9
+unbind 0
+bind l lastdisguise
+bind ESCAPE cancelselect
+bind j dropitem
+bind ` toggleconsole
+bind , changeteam
+bind . cl_trigger_first_notification
+bind / cl_decline_first_notification
+bind KP_END "join_class scout"
+bind KP_DOWNARROW "join_class soldier"
+bind KP_PGDN "join_class pyro"
+bind KP_LEFTARROW "join_class demoman"
+bind KP_5 "join_class heavyweapons"
+bind KP_RIGHTARROW "join_class engineer"
+bind KP_HOME "join_class medic"
+bind KP_UPARROW "join_class sniper"
+bind KP_PGUP "join_class spy"
+bindtoggle x "cl_showfps" 0 1 
+bindtoggle \ "sv_cheats" 0 1
+bind ] buddha
+bind [ "impulse 101"
+bind "'" "addcond 32"
+bind F4 player_ready_toggle
+unbind p
+unbind h
+unbind u
+unbind PgUp
+bind q +nocliporaction
+alias +nocliporaction "noclip;+use_action_slot_item"
+alias -nocliporaction "-use_action_slot_item"
+bind TAB +showinfo
+alias +showinfo "+showscores;net_graph 1;net_graphtext 1;net_graphproportionalfont 0"
+alias -showinfo "-showscores;net_graph 0;net_graphtext 0;net_graphproportionalfont 0"
+bind o "taunt_by_name Taunt: Rock, Paper, Scissors"
