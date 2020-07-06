@@ -1,0 +1,213 @@
+TO MAKE IT WORK :
+- put it into end of your spy config (if you don't have configs go to this video : https://www.youtube.com/watch?v=qajrfJOlZDs)
+
+
+MY DEFAULT HOTKEYS (you can change it):
+press 4 to disguise as random enemy
+press 5 to disguise as random ally (it disguises you as one of fast classes , not to make you slow)
+press u to undisguise
+also it automaticaly disguise while you shoot with MOUSE1
+
+
+OPTION number 1 - randomly disguises you as one of 5 SELECTED classes (by default : pyro, demo, engi, sniper, spy, but you can change it)
+
+bind 1 slot1attackanddisguise
+alias slot1attackanddisguise "slot1;bind MOUSE1 +attackanddisguise"
+bind 2 slotattack
+alias slotattack "slot2;bind MOUSE1 +attack" 
+bind 3 slot3attackanddisguise
+alias slot3attackanddisguise "slot3;bind MOUSE1 +attackanddisguise"
+
+bind MOUSE1 +attackanddisguise
+bind 4 disguiserandomenemy
+bind 5 disguiserandomally
+bind u "disguise 8 -2"
+
+bind w +forwardandcycle
+bind a +leftandcycle
+bind b +backandcycle
+bind d +rightandcycle
+bind SPACE +jumpandcycle
+bind MOUSE2 +attack2andcycle
+
+alias +attackanddisguise "+attack"
+alias -attackanddisguise "-attack;wait 5;disguiserandomenemy"
+
+alias +forwardandcycle "+forward;cycledisguise"
+alias -forwardandcycle "-forward"
+alias +leftandcycle "+moveleft;cycledisguise"
+alias -leftandcycle "-moveleft"
+alias +backandcycle "+back;cycledisguise"
+alias -backandcycle "-back"
+alias +rightandcycle "+moveright;cycledisguise"
+alias -rightandcycle "-moveright"
+alias +jumpandcycle "+jump;cycledisguise"
+alias -jumpandcycle "-jump"
+alias +attack2andcycle "+attack2;cycledisguise"
+alias -attack2andcycle "-attack2"
+
+alias cycledisguise "disguiseoption1"
+
+alias disguiseoption1 "cycle1;enemydisguise1;allydisguise1"
+alias cycle1 "alias cycledisguise disguiseoption2"
+alias enemydisguise1 "alias disguiserandomenemy disguise21"
+alias disguise21 "disguise 2 -1"
+alias allydisguise1 "alias disguiserandomally disguise12"
+alias disguise12 "disguise 1 -2"
+
+alias disguiseoption2 "cycle2;enemydisguise2;allydisguise2"
+alias cycle2 "alias cycledisguise disguiseoption3"
+alias enemydisguise2 "alias disguiserandomenemy disguise41"
+alias disguise41 "disguise 4 -1"
+alias allydisguise2 "alias disguiserandomally disguise22"
+alias disguise22 "disguise 2 -2"
+
+alias disguiseoption3 "cycle3;enemydisguise3;allydisguise3"
+alias cycle3 "alias cycledisguise disguiseoption4"
+alias enemydisguise3 "alias disguiserandomenemy disguise71"
+alias disguise71 "disguise 7 -1"
+alias allydisguise3 "alias disguiserandomally disguise52"
+alias disguise52 "disguise 5 -2"
+
+alias disguiseoption4 "cycle4;enemydisguise4;allydisguise4"
+alias cycle4 "alias cycledisguise disguiseoption5"
+alias enemydisguise4 "alias disguiserandomenemy disguise81"
+alias disguise81 "disguise 8 -1"
+alias allydisguise4 "alias disguiserandomally disguise72"
+alias disguise72 "disguise 7 -2"
+
+alias disguiseoption5 "cycle5;enemydisguise5;allydisguise5"
+alias cycle5 "alias cycledisguise disguiseoption1"
+alias enemydisguise5 "alias disguiserandomenemy disguise91"
+alias disguise91 "disguise 9 -1"
+alias allydisguise5 "alias disguiserandomally disguise92"
+alias disguise92 "disguise 9 -2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OPTION number 2 - randomly disguises you as one of 8 classes (by default everyone except medic , but you can change it)
+
+bind 1 slot1attackanddisguise
+alias slot1attackanddisguise "slot1;bind MOUSE1 +attackanddisguise"
+bind 2 slotattack
+alias slotattack "slot2;bind MOUSE1 +attack" 
+bind 3 slot3attackanddisguise
+alias slot3attackanddisguise "slot3;bind MOUSE1 +attackanddisguise"
+
+bind MOUSE1 +attackanddisguise
+bind 4 disguiserandomenemy
+bind 5 disguiserandomally
+bind u "disguise 8 -2"
+
+bind w +forwardandcycle
+bind a +leftandcycle
+bind b +backandcycle
+bind d +rightandcycle
+bind SPACE +jumpandcycle
+bind MOUSE2 +attack2andcycle
+
+alias +attackanddisguise "+attack"
+alias -attackanddisguise "-attack;wait 5;disguiserandomenemy"
+
+alias +forwardandcycle "+forward;cycledisguise"
+alias -forwardandcycle "-forward"
+alias +leftandcycle "+moveleft;cycledisguise"
+alias -leftandcycle "-moveleft"
+alias +backandcycle "+back;cycledisguise"
+alias -backandcycle "-back"
+alias +rightandcycle "+moveright;cycledisguise"
+alias -rightandcycle "-moveright"
+alias +jumpandcycle "+jump;cycledisguise"
+alias -jumpandcycle "-jump"
+alias +attack2andcycle "+attack2;cycledisguise"
+alias -attack2andcycle "-attack2"
+
+alias cycledisguise "disguiseoption1"
+
+alias disguiseoption1 "cycle1;enemydisguise1;allydisguise1"
+alias cycle1 "alias cycledisguise disguiseoption2"
+alias enemydisguise1 "alias disguiserandomenemy disguise11"
+alias disguise11 "disguise 1 -1"
+alias allydisguise1 "alias disguiserandomally disguise12"
+alias disguise12 "disguise 1 -2"
+
+alias disguiseoption2 "cycle2;enemydisguise2;allydisguise2"
+alias cycle2 "alias cycledisguise disguiseoption3"
+alias enemydisguise2 "alias disguiserandomenemy disguise21"
+alias disguise21 "disguise 2 -1"
+alias allydisguise2 "alias disguiserandomally disguise22"
+alias disguise22 "disguise 2 -2"
+
+alias disguiseoption3 "cycle3;enemydisguise3;allydisguise3"
+alias cycle3 "alias cycledisguise disguiseoption4"
+alias enemydisguise3 "alias disguiserandomenemy disguise31"
+alias disguise31 "disguise 3 -1"
+alias allydisguise3 "alias disguiserandomally disguise32"
+alias disguise32 "disguise 3 -2"
+
+alias disguiseoption4 "cycle4;enemydisguise4;allydisguise4"
+alias cycle4 "alias cycledisguise disguiseoption5"
+alias enemydisguise4 "alias disguiserandomenemy disguise41"
+alias disguise41 "disguise 4 -1"
+alias allydisguise4 "alias disguiserandomally disguise42"
+alias disguise42 "disguise 4 -2"
+
+alias disguiseoption5 "cycle5;enemydisguise5;allydisguise5"
+alias cycle5 "alias cycledisguise disguiseoption6"
+alias enemydisguise5 "alias disguiserandomenemy disguise61"
+alias disguise61 "disguise 6 -1"
+alias allydisguise5 "alias disguiserandomally disguise52"
+alias disguise52 "disguise 5 -2"
+
+alias disguiseoption6 "cycle6;enemydisguise6;allydisguise6"
+alias cycle6 "alias cycledisguise disguiseoption7"
+alias enemydisguise6 "alias disguiserandomenemy disguise71"
+alias disguise71 "disguise 7 -1"
+alias allydisguise6 "alias disguiserandomally disguise62"
+alias disguise62 "disguise 6 -2"
+
+alias disguiseoption7 "cycle7;enemydisguise7;allydisguise7"
+alias cycle7 "alias cycledisguise disguiseoption8"
+alias enemydisguise7 "alias disguiserandomenemy disguise81"
+alias disguise81 "disguise 8 -1"
+alias allydisguise7 "alias disguiserandomally disguise72"
+alias disguise72 "disguise 7 -2"
+
+alias disguiseoption8 "cycle8;enemydisguise8;allydisguise8"
+alias cycle8 "alias cycledisguise disguiseoption1"
+alias enemydisguise8 "alias disguiserandomenemy disguise91"
+alias disguise91 "disguise 9 -1"
+alias allydisguise8 "alias disguiserandomally disguise92"
+alias disguise92 "disguise 9 -2"
+
+
+
+
+
+BONUS : to make every other class normal (not affected by this script)
+write this to every other class own script (or use returning script) :
+
+bind MOUSE1 +attack
+bind MOUSE2 +attack2
+bind 1 slot1
+bind 2 slot2
+bind 3 slot3
+bind 4 slot4
+bind 5 slot5
+unbind u
+bind a +moveleft
+bind d +moveright
+bind s +back
+bind w +forward
+bind SPACE +jump
