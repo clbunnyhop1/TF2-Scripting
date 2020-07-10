@@ -1,0 +1,14 @@
+This is only one example , you can edit it by yourself
+You need autoexec file , if you don't have it go here : https://www.youtube.com/watch?v=qajrfJOlZDs
+
+alias crosshairone "cl_crosshair_file crosshair6;cl_crosshair_scale 65;cl_crosshair_red 0;cl_crosshair_green 255;cl_crosshair_blue 0"
+alias crosshairtwo "cl_crosshair_file crosshair3;cl_crosshair_scale 65;cl_crosshair_red 255;cl_crosshair_green 0;cl_crosshair_blue 0"
+alias crosshairthree "cl_crosshair_file crosshair5;cl_crosshair_scale 65;cl_crosshair_red 20;cl_crosshair_green 20;cl_crosshair_blue 20"
+
+alias crosshairswitch1 "slot1;crosshairone"
+alias crosshairswitch2 "slot2;crosshairtwo"
+alias crosshairswitch3 "slot3;crosshairthree"
+
+bind 1 crosshairswitch1
+bind 2 crosshairswitch2
+bind 3 crosshairswitch3
